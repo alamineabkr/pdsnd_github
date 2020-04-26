@@ -163,6 +163,11 @@ def trip_duration_stats(df):
     # TO DO: display mean travel time
     print('The mean travel time (in seconds):', mean_travel_time)
 
+    # find the shortest travel time
+    min_travel_time = df['Trip Duration'].min()
+    # TO DO: display mean travel time
+    print('The shortest travel time (in seconds):', min_travel_time)
+
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
