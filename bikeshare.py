@@ -236,6 +236,7 @@ def main():
 
         view_data = input('\nWould you like to view 5 rows of individual trip data? Enter yes or no\n')
         start_loc = 0
+        # Find out if the user wants to continue viewing 5 lines of raw data
         while (view_data.lower()=='yes'):
             print(df.iloc[start_loc:start_loc+5])
             start_loc += 5
